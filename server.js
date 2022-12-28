@@ -54,7 +54,6 @@ io.on('connection',(socket)=>{
             userCntInRoom[curRoomNumber]=1;
             roomList[id]=curRoomNumber;
             agentWaitingArena.enqueue(curRoomNumber);
-            console.log('room created: ',curRoomNumber);
             curRoomNumber++;
         }
     });
@@ -72,7 +71,6 @@ io.on('connection',(socket)=>{
             if(!agentWaitingArena.isEmpty()){  // this will check there are any available room with agent
                 
                 const room = agentWaitingArena.dequeue();
-                console.log('inside room', room);
                 socket.join(room);
                 userCntInRoom[room]++;
                 roomList[id]=room;
