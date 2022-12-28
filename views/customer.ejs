@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        const userId = "<%= userId %>";
+        const isCustomer = "<%= isCustomer %>";
+    </script>
+</head>
+<body>
+    
+    <div class="container" id="outer-box">
+        <div class="header">
+            <h1>Customer Suppport</h1>
+        </div>
+        <div id="message-container">
+            
+        </div>
+        <div class="footer">
+            <form action="" id="inputField">
+                <input type="text" id="message-input" placeholder="message" required>
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
