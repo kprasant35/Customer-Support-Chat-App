@@ -30,13 +30,13 @@ node server.js
 
 ## Customer Page ##
 
-Format: http://localhost:3000/customer/userId (currently we are not authauthenticating userId)
+Format: http://localhost:3000/customer/userId (currently we are not authenticating userId)
 
 Sample: [Customer page](http://localhost:3000/customer/123)
  
 ## Agent Page ##
 
-Format: http://localhost:3000/agent/agentId (currently we are not authauthenticating agentId)
+Format: http://localhost:3000/agent/agentId (currently we are not authenticating agentId)
 
 Sample: [Admin page](http://localhost:3000/agent/456)
 
